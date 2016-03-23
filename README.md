@@ -1,6 +1,5 @@
 Build, ship and run TIBCO Software using Docker 
 =================== 
-[TOC] 
 Introduction 
 -------------- 
 
