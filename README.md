@@ -26,7 +26,7 @@ The diagram below provides an overview of the hierarchy of the Docker images / c
 | Image	 | Description | 
 | --- | --- |
 | tibbase:1.0.0 | The `"tibbase"` image is the starting point for all the underlying TIBCO images. It contains all the dependencies / packages (such as open-jdk, wget, unzip etc) in order to build and run TIBCO Software. The image is bases on [Debian 8 (jessie)](https://hub.docker.com/_/debian/) since it’s very tightly controlled and kept extremely minimal (currently around 125 MB), while still being a full distribution. | 
-| tibrv:8.4.4 | The `"tibrv"` image enables you to install and run TIBCO Rendezvous® software. TIBCO Rendezvous® is a publish/subscribe messaging technology which is used for high-speed throughput |
+| tibrv:8.4.5| The `"tibrv"` image enables you to install and run TIBCO Rendezvous® software. TIBCO Rendezvous® is a publish/subscribe messaging technology which is used for high-speed throughput |
 | tibtra:5.10.0 | The `"tibtra"` image contains the TIBCO Runtime Agent software and comes with all the third-party software that is needed to run TIBCO ActiveMatrix BusinessWorks 5. TIBCO Runtime Agent requires TIBCO Rendezvous® to be installed for Rendezvous palette activities and / or TIBCO Hawk® micro agents features. Hence this images is derivatived from the `"tibrv"` image | 
 | tibbw:5.13.0 | The `"tibbw"` image contains the runtime capabilaties for TIBCO ActiveMatix BusinessWorks 5 | 
 | tibbw:6.3.1 | The `"tibbw"` image contains the runtime capabilaties for TIBCO ActiveMatix BusinessWorks 6 |
@@ -40,7 +40,7 @@ First of all you need to install  the Docker Engine. If you haven't done so alre
 Now we are able to build the Docker images using the following command's:
 
     docker build -t="tibbase:1.0.0" .\tibbase\
-    docker build -t="tibrv:8.4.4" .\tibrv\
+    docker build -t="tibrv:8.4.5" .\tibrv\
     docker build -t="tibtra:5.10.0" .\tibtra\
     docker build -t="tibbw:5.13.0" .\tibbw\5.x\
     docker build -t="tibadmin:5.10.0" .\tibadmin\
