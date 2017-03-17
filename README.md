@@ -45,7 +45,7 @@ Now we are able to build the Docker images using the following command's:
     docker build -t="tibbw:5.13.0" .\tibbw\5.x\
     docker build -t="tibadmin:5.10.0" .\tibadmin\
     docker build -t="tibbw:6.3.1" .\tibbw\6.x\
-    docker build -t="tibems:8.2.2" .\tibems\
+    docker build -t="tibems:8.3.0" .\tibems\
     docker build -t="tibtea:2.2.0" .\tibtea\
 
 Running TIBCO Software inside a Docker container
@@ -84,7 +84,7 @@ Work in progress..
 After you have built the tibems Docker Image you can create a container by running the following command:
 
 
-    docker run -p 7222:7222 tibems:8.2.2
+    docker run -p 7222:7222 tibems:8.3.0
 
 This container will start the TIBCO Enterprise Message daemon (tibemsd) with default settings. The logs are redirected to the sdtOut and can be viewed by running `"docker logs <containerid>"`.
 
